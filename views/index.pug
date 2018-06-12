@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+	meta(charset='UTF-8')
+	title logging
+	body
+		form(action='http://localhost:3000/auth/google', method='GET')
+			p first name
+			input(type='text' name='firstName')
+
+			p second name
+			input(type='text' name='lastName')
+
+			p submit
+			input(type='submit' value="log in")

@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Logged
+  body
+      h2
+        | Gratulacje #{username}. Zalogowałeś się!
+        | Kliknij poniższy przycisk, by powrócić do ekranu logowania
+      form(action='http://localhost:3000')
+        input(type='submit', value='Wróć do logowania')
