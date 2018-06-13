@@ -36,7 +36,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/logged', function(req, res){
-    res.render('logged', { user: googleProfile });
+    res.render('logged', { username: googleProfile.displayName });
 });
 //Passport routes
 app.get('/auth/google',
